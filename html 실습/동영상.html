@@ -1,49 +1,95 @@
 <!DOCTYPE html>
 <!-- html 5 버전 -->
 <html lang="ko">
-    <!-- html 코딩 시작 검색엔진 언어 설정 한국어=ko 영어=en -->
+  <!-- html 코딩 시작 검색엔진 언어 설정 한국어=ko 영어=en -->
   <head>
     <meta charset="UTF-8" />
     <style>
-      body{
+      body {
         margin: 0 auto;
         text-align: center;
+        background-color: aqua;
       }
-      image{
+      img {
         width: 50px;
         height: 50px;
       }
-     .icon{
+      .icon {
         width: 50px;
         height: 50px;
       }
-        video{
-            width: 300px;
-            height: 300px;
-        }
+      video {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
+      .컨테이너{
+        background-color: white;
+        width: 60%;
+        margin: 0 auto;
+      }
+      a{
+        text-align: center;
+        margin: 0 auto;
+      }
+      .버튼꾸미기{
+        display: block;
+        text-align: center;
+      }
+      .댓글{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aquamarine;
+        padding: 10px;
+        text-align: left;
+      }
     </style>
     <title>동영상 게시판</title>
-    
   </head>
 
   <body>
-    <h1>동영상 게시판</h1>
-    <img src="../이미지들/lovelyMarley.jpg"">
-    <video autoplay loop muted>
-        <source src="C:\Users\user1\frontend-workspace\html\비디오들\209409_small.mp4" type="video/mp4">
-    </video>
-
-    <br>
-
-
-    <a href="홈페이지게시판.html">
-
-        <img src="../이미지들/healing.jpg">
-    </a>
-
+    <div class="컨테이너">
+      <h1>동영상 게시판</h1>
+      <img src="../이미지들/lovelyMarley.jpg">
+      <br>
         
-    <a href="홈페이지메인.html">
-      <img src="../이미지들/hogam.jpg">
-    </a>
+      <video autoplay loop muted>
+
+        <source
+          src="../비디오들/209409_small.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <div class="댓글들">
+        댓글확인
+      </div>
+
+      <div class="댓글">
+        <p>사용자 : </p>
+        <p>멋지네요.
+      </div>
+
+      <div class="댓글">
+        <p>사용자 : </p>
+        <p>늠름하네요.
+      </div>
+
+      <div class="댓글확인">
+        <input type="text" placeholder="댓글을 입력하세요.">
+      </div>
+
+      <br />
+      <div class="버튼꾸미기">
+      <a href="홈페이지게시판.html">
+        <img src="../이미지들/healing.jpg" />
+      </a>
+
+      <a href="홈페이지메인.html">
+        <img src="../이미지들/hogam.jpg" />
+      </a>
+      </div>
+    </div>
   </body>
 </html>
