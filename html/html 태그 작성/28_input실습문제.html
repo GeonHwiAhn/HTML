@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- html 5 버전 -->
+<html lang="ko"> <!--html 태그 시작-->
+    <!-- html 코딩 시작 검색엔진 언어 설정 한국어=ko 영어=en -->
+  <head>  <!--웹 속성 설정 meta title style script link 웹 사이트 설정-->
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <form>
+        <label>1. 납품자명 : </label>
+        <input type="text" name="name">
+        <br>
+
+        <label>2. email : </label>
+        <input type="email" name="email">
+        <br>
+
+        <label>3. 홈페이지 : </label>
+        <input type=" text" value="http://">
+        <br>
+
+        <label>4. 지역 : </label>
+        <select>
+            <option>부산</option>
+        </select>
+        <br>
+
+        <ul>
+            <li>
+                <label>상품명 : </label>
+                <input type="text" name="productName">
+            </li>
+            <li>
+                <label>납품수량 : </label>
+                <input type="text" name="amount" placeholder="최소 100">
+            </li>
+            <li>
+                <label>납품등급 : </label>
+                <input type="range" name="grade" min="1" max="5">
+            </li>
+            <li>
+                <label>기타사항 : </label>
+                <textarea name="etc" rows="5" cols="20"></textarea>
+            </li>
+        </ul>
+
+        <button>send message</button>
+        
+    </form>>
+  </body>
+</html> <!--html 태그 종료-->
